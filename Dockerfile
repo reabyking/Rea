@@ -12,6 +12,5 @@ RUN bundle install
 
 ENV PORT 80
 EXPOSE 80
-CMD ["ruby", "helloworld.rb"]
+CMD ["ruby","helloworld.rb","-o","0.0.0.0"]
 
-##RUN bundle exec rackup -p 80 --host 0.0.0.0

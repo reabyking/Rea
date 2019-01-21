@@ -5,18 +5,18 @@ This solution has been tested and run from an Ubuntu Lastet Image 18.04 Docker i
 
 
 ## Table of Contents
-  * [Manual Build your own image](#build)
+  * [Manual build your Docker image](#build)
     - [Requirements to Run](#req-run)
     - [Build your own image process](#mbuild)
-  * [Automatic Build your Docker image](#auto-build)
-  * [Deploy your image with Docker to any cloud or system](#deploy)
+  * [Automatic build your Docker image](#auto-build)
+  * [Deploy your Docker image](#deploy)
   * [Security Enhancement](#security)
     - [Docker](#sec-Docker)
     - [Server (Ubuntu)](#sec-server)
     - [Extra considerations](#sec-consider)
   * [Why Docker](#reason)
 
-## Manual Build your own imag<a id="build"></a>
+## Manual build your Docker imag<a id="build"></a>
 
 ### Requirements to Run for manual build image <a id="req-run"></a>
 For the below points that require installation i have place some breif instructions for how to install them on an Ubuntu System.
@@ -88,7 +88,7 @@ docker push reabyorg/rea:latest
 ```
 
 
-## Automatic Build your Docker image<a id="auto-build"></a>
+## Automatic build your Docker image<a id="auto-build"></a>
 For the below points, Docker image is built automatically with Dockerfile. Basically, the Dockerfile is replacing all manual image build process. 
 
  ```bash
@@ -120,7 +120,7 @@ docker push reabyorg/rea:latest
 
 ```
 
-## Deploy your image with Docker to any cloud or system <a id="deploy"></a>
+## Deploy your Docker image <a id="deploy"></a>
 
 ```bash
 # Deploy your own image 
@@ -146,7 +146,7 @@ docker run -p 80:80 reabyorg/rea:latest
 - Use Nginx or Apache for web service. 
 - HA with load balancer.
 - Enable Root password for system level protection.
-- Batch deployment with Automation tools, kubernetes or Ansible. 
+- Batch deployment with Automation tools, Kubernetes or Ansible. 
 - Deploy WAF to protect app level security.
 - Review SSL protocal and certificate and enforce SSL for all traffic. 
 - Use private Docker repository to protect your own Image instead of Docker Hub.
@@ -155,7 +155,7 @@ docker run -p 80:80 reabyorg/rea:latest
 My reasoning behind using the mix of Docker and Ubuntu is listed below:
 - Docker fits for any Infrastructure: Public clouds (AWS, Azure, Google Cloud, etc.) or On-premises
 - Docker fits for any Operating System: CentOS, Oracle Linux, RHEL, SUSE, Ubuntu,
-Windows Server 2016, Windows 10. This solution is built on Special Linux, tested on Windows and Ubuntu. 
+Windows Server 2016, Windows 10. For example, this solution is built on Special Linux, tested on Windows and Ubuntu. 
 - Docker has Unified and Automated Operations. With a pre-built image, a new Global scale service  could be deployed in a few seconds. 
 - Fast deployment. Get App running in a few seconds, except downloading Docker and image. 
 - Continuous integration (CI) for automated build and testing as well as continuous delivery (CD) for deploying versions to the different environments.

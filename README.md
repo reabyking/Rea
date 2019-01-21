@@ -16,7 +16,7 @@ This solution has been tested and run from an Ubuntu Lastet Image 18.04 Docker i
     - [Extra considerations](#sec-consider)
   * [Why Docker](#reason)
 
-## Manual build your Docker imag<a id="build"></a>
+## Manual build your Docker image <a id="build"></a>
 
 ### Requirements to Run for manual build image <a id="req-run"></a>
 For the below points that require installation i have place some breif instructions for how to install them on an Ubuntu System.
@@ -49,7 +49,7 @@ Also the Links will take you to some useful pages for how to install or get acce
  ```
 
 
-## Build your own image process <a id="mbuild"></a>
+### Build your own image process <a id="mbuild"></a>
 
 
  ```bash
@@ -131,18 +131,18 @@ docker run -p 80:80 reabyorg/rea:latest
 ```
 
 ## Security Enhancement <a id="security"></a>
-#### Docker  <a id="sec-Docker"></a>
+### Docker  <a id="sec-Docker"></a>
 
 - Docker only allow port 80 incoming tracffic to Ubuntu system. 
 - Enhanced network security by design, only desinated port expose to external.
 
-#### Server (Ubuntu)  <a id="sec-server"></a>
+### Server (Ubuntu)  <a id="sec-server"></a>
 - Unhackable system level. Root account password is NOT enabled. Console Root access via Docker enviroment.
 - Unhackable network level. Only Http port 80 is enabled. SSH Server is NOT enabled. 
 - UFW is NOT enabled. Not need maintain UFW firewall. 
 - Operating System patches up to date including Kernel Versions.
 
-## Extra considerations for production  <a id="sec-consider"></a>
+### Extra considerations for production  <a id="sec-consider"></a>
 - Use Nginx or Apache for web service. 
 - HA with load balancer.
 - Enable Root password for system level protection.
@@ -159,5 +159,3 @@ Windows Server 2016, Windows 10. For example, this solution is built on Special 
 - Docker has Unified and Automated Operations. With a pre-built image, a new Global scale service  could be deployed in a few seconds. 
 - Fast deployment. Get App running in a few seconds, except downloading Docker and image. 
 - Continuous integration (CI) for automated build and testing as well as continuous delivery (CD) for deploying versions to the different environments.
-
-

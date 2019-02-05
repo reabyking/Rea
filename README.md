@@ -19,11 +19,12 @@ This solution has been tested and run from an Ubuntu Lastet Image 18.04 Docker i
 
 ## Orchestration with Docker-compose <a id="Orchestration"></a>
 
+Docker image build and deployment are fully automated with docker-compose. The Manual and auto build progress are for details and security reveiew. 
+
  ```bash
      docker-compose build
      docker-compose start
  ```   
-
 ## Manual build your Docker image <a id="build"></a>
 Manual build image progress is demostration only. For the below points that require installation i have place some breif instructions for how to install them on an Ubuntu System. Links will take you to some useful pages for how to install or get access to each requirement.
 
@@ -95,7 +96,8 @@ docker push reabyorg/rea:latest
 
 
 ## Automatic build your Docker image<a id="auto-build"></a>
-For the below points, Docker image is built automatically with Dockerfile. Basically, the Dockerfile is replacing all manual image build process. 
+
+Docker automatic image build with Dockerfile is for design review only. Basically, the Dockerfile is replacing all manual image build process. 
 
  ```bash
 # Get your Dockerfile ready 

@@ -4,6 +4,7 @@ Please see the below solution to the REA Group Systems Engineer Test.
 This solution has been tested and run from an Ubuntu Lastet Image 18.04 Docker image on Docker Platform. The test docker repository name is set as reabyorg/rea. 
 
 ## Table of Contents
+  * [Orchestration with Docker-compose](#Orchestration)
   * [Manual build your Docker image](#build)
     - [Requirements to Run](#req-run)
     - [Build your own image process](#mbuild)
@@ -14,6 +15,14 @@ This solution has been tested and run from an Ubuntu Lastet Image 18.04 Docker i
     - [Server (Ubuntu)](#sec-server)
     - [Extra considerations](#sec-consider)
   * [Why Docker](#reason)
+
+
+## Orchestration with Docker-compose <a id="Orchestration"></a>
+
+ ```bash
+     docker-compose build
+     docker-compose start
+ ```   
 
 ## Manual build your Docker image <a id="build"></a>
 Manual build image progress is demostration only. For the below points that require installation i have place some breif instructions for how to install them on an Ubuntu System. Links will take you to some useful pages for how to install or get access to each requirement.
